@@ -41,6 +41,7 @@ const Wrap = styled.div`
 
 const ImageWrap = styled.div`
   position: relative;
+  width: ${({ size = 100 }) => size}%;
   margin-bottom: 34px;
   border: 1px solid #eee;
 
@@ -60,11 +61,12 @@ const ImageWrap = styled.div`
 const Image = styled.img`
   flex: 0 0 auto;
   width: 100%;
-
   box-sizing: border-box;
 `;
 
-const Explain = styled.p``;
+const Explain = styled.p`
+  text-align: center;
+`;
 
 const BtnWrap = styled.div`
   display: flex;
@@ -112,11 +114,19 @@ function Modal({ isModal, modalOff, portfolios, selected }) {
       <Wrap ref={modalArea}>
         <>
           {now.image.map((image, index) => {
-            return (
-              <ImageWrap>
-                <Image key={index} src={require(`../assets/screen/${image}.png`)} />
-              </ImageWrap>
-            );
+            if (now.name === 'MovieApp') {
+              return (
+                <ImageWrap key={index} size="80">
+                  <Image src={require(`../assets/screen/${image}.png`)} />
+                </ImageWrap>
+              );
+            } else {
+              return (
+                <ImageWrap key={index}>
+                  <Image src={require(`../assets/screen/${image}.png`)} />
+                </ImageWrap>
+              );
+            }
           })}
           <Explain>{now.explain}</Explain>
           <BtnWrap>

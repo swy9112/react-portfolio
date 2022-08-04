@@ -47,7 +47,7 @@ function Portfolio({ modalOff, portfolios, getIndex }) {
   };
   return (
     <Section direction="column">
-      <SubTitle>pppp</SubTitle>
+      <SubTitle>Portfolio</SubTitle>
       <Wrap>
         {portfolios.map((portfolio, index) => {
           if (portfolio.name !== 'Portfolio') {
@@ -59,7 +59,7 @@ function Portfolio({ modalOff, portfolios, getIndex }) {
             );
           } else {
             return (
-              <Item key={index} onClick={() => console.log('ppp')}>
+              <Item key={index} onClick={() => window.open(portfolio.git)}>
                 <Image src={require(`../assets/${portfolio.thumbnail}.jpg`)} />
                 <Text>{portfolio.name}</Text>
               </Item>
