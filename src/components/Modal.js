@@ -18,7 +18,8 @@ const Background = styled.div`
 `;
 
 const Wrap = styled.div`
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,8 +76,10 @@ const BtnWrap = styled.div`
 `;
 
 const LinkBtn = styled.button`
+  margin: 0 8px;
   padding: 6px 12px;
   border: 1px solid #ccc;
+  font-size: 18px;
   color: #323232;
 `;
 
