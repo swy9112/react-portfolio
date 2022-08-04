@@ -11,6 +11,10 @@ export const Wrap = styled.div`
   padding: 60px 0;
   border-bottom: 1px solid #323232;
 
+  &:last-child {
+    border: none;
+  }
+
   @media screen and (max-width: 1024px) {
     height: auto;
   }
