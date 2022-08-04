@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/react-portfolio/static/js/main.767c29ba.js",
+    "main.js": "/react-portfolio/static/js/main.faf076eb.js",
     "static/media/coway_screen_1.png": "/react-portfolio/static/media/coway_screen_1.08b0959a6d7fd59fac56.png",
     "static/media/lg_screen_3.png": "/react-portfolio/static/media/lg_screen_3.1773db7d570cfb80a51f.png",
     "static/media/movie_screen_2.png": "/react-portfolio/static/media/movie_screen_2.151db9244386f74bf50d.png",
@@ -25,9 +25,9 @@
     "static/media/smart.jpg": "/react-portfolio/static/media/smart.a7f716c4bd07d3ef75cc.jpg",
     "static/media/lg.jpg": "/react-portfolio/static/media/lg.b822ea6340d79578537e.jpg",
     "index.html": "/react-portfolio/index.html",
-    "main.767c29ba.js.map": "/react-portfolio/static/js/main.767c29ba.js.map"
+    "main.faf076eb.js.map": "/react-portfolio/static/js/main.faf076eb.js.map"
   },
   "entrypoints": [
-    "static/js/main.767c29ba.js"
+    "static/js/main.faf076eb.js"
   ]
 }
