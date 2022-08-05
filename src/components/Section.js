@@ -20,7 +20,7 @@ export const Wrap = styled.div`
   }
 `;
 
-function Section({ children, direction = 'row' }) {
+const  Section = ({ children, direction = 'row' }) => {
   return <Wrap direction={direction}>{children}</Wrap>;
 }
 

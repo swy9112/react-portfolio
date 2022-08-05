@@ -38,6 +38,13 @@ const Wrap = styled.div`
     background: #c9c9c9;
     border-radius: 4px;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 `;
 
 const ImageWrap = styled.div`
@@ -45,6 +52,10 @@ const ImageWrap = styled.div`
   width: ${({ size = 100 }) => size}%;
   margin-bottom: 34px;
   border: 1px solid #eee;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 10px
+  }
 
   &::after {
     position: absolute;
@@ -66,6 +77,8 @@ const Image = styled.img`
 `;
 
 const Explain = styled.p`
+  line-height: 1.2;
+  font-weight: 300;
   text-align: center;
 `;
 
@@ -79,7 +92,7 @@ const LinkBtn = styled.button`
   margin: 0 8px;
   padding: 6px 12px;
   border: 1px solid #ccc;
-  font-size: 18px;
+  font-size: 14px;
   color: #323232;
 `;
 
@@ -100,7 +113,9 @@ function Modal({ isModal, modalOff, portfolios, selected }) {
   const onClose = (e) => {
     if (modalBg.current === e.target) {
       modalOff();
-      modalArea.current.scrollTop = 0;
+      setTimeout(() => {
+        modalArea.current.scrollTop = 0;
+      }, 400);
     }
   };
 

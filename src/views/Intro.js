@@ -2,16 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 import Section from './../components/Section';
 
+
 const Title = styled.h2`
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 3.6rem
+  }
 `;
 
 const MyInfo = styled.div`
   display: flex;
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 2.4rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.8rem
+  }
 
   & > span {
     &::after {

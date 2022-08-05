@@ -40,12 +40,13 @@ function App() {
     setSelected(idx);
   };
 
+
   return (
     <>
       <Reset />
       <GlobalStyle />
       <Container>
-        <Intro />
+        <Intro/>
         <Work />
         <Portfolio modalOff={modalOff} portfolios={portfolios} getIndex={getIndex} />
         <Education />

@@ -9,10 +9,16 @@ const Wrap = styled.div`
   gap: 24px;
   align-items: center;
   width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
 `;
 
 const Item = styled.button`
   position: relative;
+  padding: 0;
   border: 1px solid #ccc;
 `;
 
